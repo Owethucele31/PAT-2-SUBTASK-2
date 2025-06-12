@@ -1,0 +1,7 @@
+#include <iostream>
+#include "morse_code_translator.h"
+
+void displayTranslatedMessage(const std::string& input, const std::string& morseCode) {
+    std::cout << "Input: " << input << std::endl;
+    std::cout << "Morse Code: " << morseCode << std::endl;
+}

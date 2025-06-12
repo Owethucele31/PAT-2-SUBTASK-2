@@ -1,0 +1,16 @@
+#include <iostream>
+#include "morse_code_translator.h"
+
+std::string getUserInput() {
+    std::string input;
+    std::cout << "Enter a short English message: ";
+    std::getline(std::cin, input);
+    return input;
+}
+
+int main() {
+    std::string input = getUserInput();
+    std::string morseCode = translateToMorseCode(input);
+    displayTranslatedMessage(input, morseCode);
+    return 0;
+}
